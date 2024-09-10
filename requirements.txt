@@ -1,0 +1,9 @@
+langchain
+langchain_qdrant
+langchain_community
+langgraph
+groq
+sentence_transformers
+langchain_groq 
+wikipedia
+gradio
