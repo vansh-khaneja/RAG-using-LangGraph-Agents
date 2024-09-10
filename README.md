@@ -14,13 +14,13 @@ This project implements a Agentic RAG application using  `LangGraph` and `Qdrant
 
 ## Introduction
 
-In this project, we used Matryoshka Representation Learning embeddings for efficient multi-query retrieval. The embeddings are generated using `text-embedding-3-small` and `text-embedding-3-large` models and stored in the Qdrant vector database. This approach allows for scalable and accurate retrieval of relevant information from large datasets.
+In this project we are building a RAG application that uses agents to answer the question based on the query given by the user.
 
 ## Features
 
 - Fast and efficient way for data retrieval
-- Supports `text-embedding-3-small` and `text-embedding-3-large` models
-- Two stage retrieval for better searching
+- Wide queries support
+- Multi agentic RAG
 - Scalable and high-performance retrieval system
 
 ## Installation
@@ -28,8 +28,8 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/vansh-khaneja/Multi-Stage-Queries-with-MRL
-    cd Multi-Stage-Queries-with-MRL
+    git clone https://github.com/vansh-khaneja/RAG-using-LangGraph-Agents
+    cd RAG-using-LangGraph-Agents
     ```
 
 2. Set up the Python environment and install dependencies:
@@ -45,19 +45,15 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
     Follow the [Qdrant documentation](https://qdrant.tech/documentation/) to install and configure Qdrant on your system.
 
 ## Execution
-1.Create a .env file and create a variable ```OPENAI_API_KEY``` storing your API key.
 
-
-2.Download the dataset for this project [here](https://run.unl.pt/bitstream/10362/135618/1/TEGI0570.pdf) or you can try with your own dataset. Just change the path of the PDF here.
+1.Download the dataset for this project [here](https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset) or you can try with your own dataset. Just change the path of the file here.
 
 ```sh
-    loaders = [
-    PyPDFLoader("/content/TEGI0570.pdf"),
-    ]
+    file_path = '/content/Airline Dataset.csv'
 ```
 
 
-3.Execute the ```main.py``` file by running this command in terminal.
+2.Execute the ```main.py``` file by running this command in terminal.
 
 ```sh
     python main.py
