@@ -1,4 +1,4 @@
-# Multi-Stage-Queries-with-MRL
+# Agentic RAG using LangGraph
 This project implements a Agentic RAG application using  `LangGraph` and `Qdrant`. The embeddings are stored and queried using the [Qdrant](https://qdrant.tech/) vector database. To learn more about the project please refer this [article](j).
 
 ![Alt Text - description of the image](https://github.com/vansh-khaneja/RAG-using-LangGraph-Agents/blob/main/workflow.png?raw=true)
