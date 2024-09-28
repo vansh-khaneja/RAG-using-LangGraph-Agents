@@ -68,7 +68,7 @@ from google.colab import userdata
 from langchain_groq import ChatGroq
 import os
 
-llm=ChatGroq(groq_api_key="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",model_name="Gemma2-9b-It")
+llm=ChatGroq(groq_api_key="GROQ_API_KEY",model_name="Gemma2-9b-It")
 structured_llm_router = llm.with_structured_output(RouteQuery)
 
 system = """You are an expert at routing a user question to a vectorstore or fetchweather.
@@ -207,7 +207,7 @@ except Exception:
 from pprint import pprint
 from groq import Groq
 
-client = Groq(api_key="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")
+client = Groq(api_key="GROQ_API_KEY")
 
 def ask(input_text):
     inputs = {
